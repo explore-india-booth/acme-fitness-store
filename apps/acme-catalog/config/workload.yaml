@@ -4,7 +4,6 @@ metadata:
   name: acme-catalog
   labels:
     apps.tanzu.vmware.com/workload-type: web
-    apps.tanzu.vmware.com/has-tests: "true"
     app.kubernetes.io/part-of: acme-fitness-store
 spec:
   env:
@@ -15,16 +14,6 @@ spec:
     - name: spring.web.resources.cache.cachecontrol.cache-public
       value: "true"
   params:
-  - name: testing_pipeline_matching_labels
-    value:
-      apps.tanzu.vmware.com/pipeline: test
-      apps.tanzu.vmware.com/language: java
-      apps.tanzu.vmware.com/pipeline: jenkins-pipeline
-  - name: testing_pipeline_params
-    value:
-      job-name: maven_test
-      secret-name: jenkins-tls
-      job-params: "[{\"name\":\"GIT-URL\",\"value\":\"https://github.com/Eknathreddy09/tanzu-java-web-app\"},{\"name\":\"GIT-BRANCH\",\"value\":\"main\"}]"
   - name: annotations
     value:
       autoscaling.knative.dev/minScale: "1"
