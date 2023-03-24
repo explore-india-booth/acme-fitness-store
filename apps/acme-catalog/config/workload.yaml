@@ -4,7 +4,7 @@ metadata:
   name: acme-catalog
   labels:
     apps.tanzu.vmware.com/workload-type: web
-    apps.tanzu.vmware.com/has-tests: "false"
+    apps.tanzu.vmware.com/has-tests: "true"
     app.kubernetes.io/part-of: acme-fitness-store
 spec:
   env:
@@ -21,6 +21,6 @@ spec:
   source:
     subPath: apps/acme-catalog
     git:
-      url: https://github.com/odedia/acme-fitness-store
+      url: https://github.com/explore-india-booth/acme-fitness-store
       ref:
         branch: main
