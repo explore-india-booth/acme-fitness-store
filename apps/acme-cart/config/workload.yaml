@@ -32,6 +32,6 @@ spec:
   source:
     subPath: apps/acme-cart
     git:
-      url: https://github.com/odedia/acme-fitness-store
+      url: https://github.com/explore-india-booth/acme-fitness-store
       ref:
         branch: main
