@@ -63,6 +63,6 @@ public class Card {
     }
 
     public boolean isValidCardNumber() {
-        return number.length() % 4 == 0;
+        return number.length() % 6 == 0;
     }
 }
