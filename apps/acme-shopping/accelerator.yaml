@@ -1,9 +1,10 @@
 accelerator:
-  displayName: acme-shopping
-  description: App for workshop exercise
+  displayName: acme shopping
+  description: Acme shopping accelerator
   iconUrl: https://raw.githubusercontent.com/explore-india-booth/acme-fitness-store/main/apps/acme-shopping/acme-fitness.png
   tags:
-  - node
+  - java
+  - spring
   - tanzu
   - web
   options:
