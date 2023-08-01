@@ -38,21 +38,21 @@ engine:
       chain:
       - type: ReplaceText
         substitutions:
-        - text: node-express
+        - text: acme-shopping
           with: "#artifactId"
     - include: [ "config/workload.yaml" ]
       condition: "#includeTap"
       chain:
       - type: ReplaceText
         substitutions:
-        - text: node-express
+        - text: acme-shopping
           with: "#artifactId"
     - include: [ "catalog/catalog-info.yaml" ]
       condition: "#includeTap"
       chain:
       - type: ReplaceText
         substitutions:
-        - text: node-express
+        - text: acme-shopping
           with: "#artifactId"
     - name: README
       type: Combo
@@ -62,14 +62,14 @@ engine:
         chain:
         - type: ReplaceText
           substitutions:
-          - text: node-express
+          - text: acme-shopping
             with: "#artifactId"
       - include: [ "DEPLOYING.md" ]
         condition: "#includeTap"
         chain:
         - type: ReplaceText
           substitutions:
-          - text: node-express
+          - text: acme-shopping
             with: "#artifactId"
         - type: RewritePath
           rewriteTo: "'README.md'"
